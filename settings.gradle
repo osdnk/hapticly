@@ -1,0 +1,1 @@
+include ':haptic', ':app', ':base', ':instantapp'

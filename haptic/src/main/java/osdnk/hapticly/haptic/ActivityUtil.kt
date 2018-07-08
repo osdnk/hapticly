@@ -1,9 +1,10 @@
 package osdnk.hapticly.haptic
 
-import android.app.Fragment
-import android.app.FragmentManager
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
 
-class ActivityUtil {
+
+object ActivityUtil {
     fun addFragmentToActivity(manager: FragmentManager, fragment: Fragment, frameId: Int) {
         val transaction = manager.beginTransaction()
         transaction.add(frameId, fragment)

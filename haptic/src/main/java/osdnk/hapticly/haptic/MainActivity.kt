@@ -1,6 +1,5 @@
 package osdnk.hapticly.haptic
 
-import android.app.FragmentManager
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
@@ -16,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_dashboard -> {
                 message.setText(R.string.title_dashboard)
-                ActivityUtil.addFragmentToActivity(fragmentManager, ArticleFragment(), R.id.container)
+                ActivityUtil.addFragmentToActivity(fragmentManager, AndroidFragment(), R.id.container)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {

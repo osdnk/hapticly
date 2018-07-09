@@ -34,7 +34,11 @@ class AndroidFragment : Fragment() {
 
         val contextClick: Button = view.findViewById(R.id.context_click)
         contextClick.setOnClickListener {
-            view.performHapticFeedback(CONTEXT_CLICK)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                view.performHapticFeedback(CONTEXT_CLICK)
+            } else {
+                deprecationDialog(Build.VERSION_CODES.M, context!!)
+            }
         }
 
 

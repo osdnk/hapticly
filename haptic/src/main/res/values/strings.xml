@@ -11,4 +11,11 @@
     <string name="android_text_handle_move">TEXT_HANDLE_MOVE</string>
     <string name="android_virtual_key">VIRTUAL_KEY</string>
     <string name="android_virtual_key_release">VIRTUAL_KEY_RELEASE</string>
+    <string name="ios_impact_light">IMPACT LIGHT</string>
+    <string name="ios_impact_medium">IMPACT MEDIUM</string>
+    <string name="ios_impact_heavy">IMPACT HEAVY</string>
+    <string name="ios_notification_success">NOTIFICATION SUCCESS</string>
+    <string name="ios_notification_warning">NOTIFICATION WARNING</string>
+    <string name="ios_notification_error">NOTIFICATION ERROR</string>
+    <string name="ios_selection">SELECTION</string>
 </resources>

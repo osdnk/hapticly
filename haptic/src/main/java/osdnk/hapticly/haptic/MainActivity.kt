@@ -13,13 +13,13 @@ class MainActivity : AppCompatActivity() {
                 message.setText(R.string.title_home)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_dashboard -> {
+            R.id.android -> {
                 message.setText(R.string.title_dashboard)
                 ActivityUtil.addFragmentToActivity(fragmentManager, AndroidFragment(), R.id.container)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications -> {
-                message.setText(R.string.title_notifications)
+            R.id.newest_ios -> {
+                ActivityUtil.addFragmentToActivity(fragmentManager, iOSNewestAPIFragment(), R.id.container)
                 return@OnNavigationItemSelectedListener true
             }
         }

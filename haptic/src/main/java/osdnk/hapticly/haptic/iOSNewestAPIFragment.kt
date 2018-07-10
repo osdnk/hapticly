@@ -28,7 +28,7 @@ class iOSNewestAPIFragment : Fragment() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 val vibe:Vibrator = activity?.getSystemService(VIBRATOR_SERVICE) as Vibrator
                 var effect: VibrationEffect = VibrationEffect.createWaveform(
-                        longArrayOf(0, 30, 40, 30, 40, 30), -1
+                        longArrayOf(0, 30, 40, 30, 50, 80), -1
 
                 )
                 vibe.vibrate(effect)
@@ -60,8 +60,8 @@ class iOSNewestAPIFragment : Fragment() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 val vibe:Vibrator = activity?.getSystemService(VIBRATOR_SERVICE) as Vibrator
                 var effect: VibrationEffect = VibrationEffect.createWaveform(
-                        longArrayOf(0, 40, 55, 20),
-                        intArrayOf(0, 250, 0, 120),
+                        longArrayOf(0, 30, 65, 20),
+                        intArrayOf(0, 250, 0, 180),
                         -1
 
                 )
